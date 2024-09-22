@@ -1,0 +1,98 @@
+
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures the section takes full viewport height */
+    padding-top: 30px; /* Space below the navbar */
+    background-color: #f4f6f8;
+    overflow: hidden; /* Ensure no overflow outside the main section */
+  }
+  
+  .login-container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 90%;
+    margin-top: 30px;
+  }
+  
+  .login-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .login-form-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+  
+  /* Add margin-top to avoid overlapping with navbar */
+  .login-form-container form {
+    margin-top: 20px;
+  }
+  
+  .login-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .recaptcha-container {
+    margin-top: 20px;
+  }
+  
+  .login-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Ensure that the recaptcha and login button aren't hidden by any other element */
+  .recaptcha-container, .login-btn {
+    position: relative;
+    z-index: 10; /* Ensure these are above other elements */
+  }
+  
+  .login-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+      width: 95%;
+    }
+  
+    .login-image {
+      width: 100%;
+    }
+  
+    .login-form-container {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  

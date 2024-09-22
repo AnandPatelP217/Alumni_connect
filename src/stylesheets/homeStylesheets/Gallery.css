@@ -1,0 +1,97 @@
+/* Gallery slider */
+.gallery {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Light background for better contrast */
+  }
+  
+  .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Smooth edges */
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-10px); /* Elevate item slightly on hover */
+  }
+  
+  .gallery-item img {
+    transition: transform 0.4s ease-in-out, filter 0.3s ease-in-out;
+    border-radius: 10px; /* Ensure the image follows the border radius */
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.85); /* Darken the image a bit on hover */
+  }
+  
+  /* Gallery container styling */
+  .gallery .gallery-slider {
+    gap: 1rem; /* Increased gap for better spacing */
+    padding: 1rem;
+    max-width: 100%; /* Make it responsive */
+    max-height: 250px;
+    min-height: 250px;
+    background-color: transparent;
+    transition: all 0.4s ease-in;
+    border: 2px solid var(--borderColor);
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .slider-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Add gap between buttons */
+  }
+  
+  /* Button Styling */
+  .slider-button button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* More padding for a comfortable feel */
+    color: var(--primaryColor);
+    margin: 0.5rem 0.7rem 2rem 0.5rem;
+    border: 1px solid var(--bgColor);
+    border-radius: 5px;
+    background-color: var(--bgLight);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .slider-button button:hover {
+    background-color: var(--primaryColor);
+    color: #fff; /* Invert colors on hover */
+    transform: translateY(-3px); /* Lift button slightly on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More shadow on hover */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .gallery .gallery-slider {
+      flex-direction: column;
+      gap: 1.5rem; /* Increased gap for better visual spacing on mobile */
+    }
+  
+    .slider-button {
+      flex-direction: column;
+    }
+  
+    .slider-button button {
+      width: 100%; /* Make buttons full-width on smaller screens */
+      text-align: center;
+    }
+  }
+  

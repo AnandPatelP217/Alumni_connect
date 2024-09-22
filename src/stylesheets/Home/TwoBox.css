@@ -1,0 +1,82 @@
+/* TwoBox.css */
+
+.twobox-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.twobox-container h1 {
+  color: #106303;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 3px solid #0d8203;
+}
+
+.two-column-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to next line */
+  justify-content: space-around;
+}
+
+.first-column,
+.second-column {
+  flex: 1 0 45%; /* Adjust width of columns */
+  padding: 20px;
+}
+
+.first-column img,
+.second-column img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.first-column button,
+.second-column button {
+  background-color: rgb(32, 155, 32);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%; /* Make buttons fill the column width */
+  transition: transform 0.9s ease;
+}
+
+.first-column button:hover,
+.second-column button:hover {
+  background-color: #00700f;
+  transform: scale(0.9);
+
+}
+
+.first-column button:focus,
+.second-column button:focus {
+  outline: none;
+}
+
+.first-column h1,
+.second-column h1 {
+  color: #333;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .two-column-container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center columns vertically */
+  }
+
+  .first-column,
+  .second-column {
+    width: 100%; /* Make columns full width */
+    margin-bottom: 20px; /* Add space between columns */
+  }
+}

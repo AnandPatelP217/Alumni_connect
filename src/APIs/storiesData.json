@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "bio": "John is a software engineer at XYZ company. He graduated in 2010 with a degree in Computer Science.",
+    "graduationYear": "2010",
+    "profession": "Software Engineer",
+    "image": "https://png.pngtree.com/png-vector/20230801/ourmid/pngtree-the-cartoon-character-of-a-student-with-mustache-on-his-head-vector-png-image_6828851.png"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "bio": "Jane is a data scientist at ABC Corp. She graduated in 2012 with a degree in Data Science.",
+    "graduationYear": "2012",
+    "profession": "Data Scientist",
+    "image": "https://png.pngtree.com/png-vector/20230801/ourmid/pngtree-the-cartoon-character-of-a-student-with-mustache-on-his-head-vector-png-image_6828851.png"
+  }
+]
